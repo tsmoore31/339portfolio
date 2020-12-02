@@ -11,7 +11,7 @@ a.activePage{
     font-weight: bold;
     text-transform: uppercase;
 }
-    
+
 body{
     background-color: rgb(214, 214, 214);
     font-size: 18px;
@@ -28,13 +28,9 @@ h1{
     text-align: center;
     display: block;
     font-weight: bold;
+    font-family: 'Lora';
 }
-    
-#about-header{
-    padding-top: 30px; 
-    padding-bottom: 10px;
 
-}
     
 h2{
     font-size: 32px;
@@ -62,12 +58,15 @@ nav li{
     align-content: center; 
 }
     
-nav{
+header{
     display:flex;
     justify-content: center;
     list-style:none;  
     align-content: center;
     background-color: #A2629B;
+    padding: 0;
+    text-decoration-color: black;
+
 }
     
 
@@ -81,7 +80,7 @@ nav a{
     
 nav a:hover{
     text-decoration: underline;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
     
 .skip a{
@@ -133,7 +132,6 @@ footer{
 }
     
 .nav{
-    background-color:rgb(214, 214, 214);
     padding: 20px 0; 
     text-align: right; 
     align-content: center;
@@ -143,11 +141,13 @@ footer{
     grid-row-end:2;
 }
 .breakfast-format{
+    /*
     display: grid;
     grid-template-columns: repeat(2, minmax(50%, 1fr));
     grid-auto-rows: auto 350px;
     justify-content: center;
-    align-self: center;
+    align-self: center; */
+    grid-column: 2/ span 1;
 }
 
 .lunch-format{
@@ -215,8 +215,10 @@ footer{
 }
   
 .breakfast-format img{
-    width: 80%;
-    padding: 20px;
+    grid-column: 1 / -1;
+    max-height: 700px;
+    overflow: hidden;
+
 }
 
 .lunch-format img{
