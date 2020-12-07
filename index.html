@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5B21711W42"></script>
@@ -22,62 +22,128 @@
         
     </head>
     <body>
-      <header>
-        <div class="skip"><a href="#about-header">Skip to Main Content</a></div>
-        <div class="nav">
-            <nav>
-            <ul id="nav">
-                <li><a href="index.html" class= "activePage">About</a></li>
-                <li><a href="breakfast.html">Breakfast</a></li>
-                <li><a href="lunch.html">Lunch</a></li>
-                <li><a href="dinner.html">Dinner</a></li>
-                <li><a href="restaurants.html">Restaurants</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            </nav>
-        </div> 
-      </header>
-    <main>
-        <div class="container">
-            <div class="container2">
-            <h1>ABOUT BITESBYTM</h1>
-            
-            <div class="about-text">
-                <a name="about"></a>
-                <p> Hi! My name is Tara Moore! I'm a junior at the University of Michigan. I am studying Information Analysis within the School of Information and 
-                    minoring in Business Administration through the Ross School of Business. Since going vegan four and a half years ago, I have fallen in love with cooking
-                    and food! I've created this blog to share how I focus on healthy eating while in college!
-                </p>
-            </div>
+    <div class="skip"><a href="#h-about">Skip to Main Content</a></div>
+    <nav>
+        <ul id="nav_link">
+            <li><a href="index.html" class= "activePage">About</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+        </ul>
+        </nav>  
+    <header id = 'h-about'>
+        <h1>ABOUT BITESBYTM</h1>     
+    </header>
+    <main class = 'container'>
+        <div class="about">
+            <img src = "images/tara.jpg" alt = "tara profile picture" class = "tara_picture"></img>
+                <div class="about-text">
+                    <a name="about"></a>
+                    <p><b>Hi, I'm Tara Moore!</b></p>
+                    <br> <p>I'm a junior at the University of Michigan. I am studying Information Analysis within the <a href = "https://www.si.umich.edu/" target="_blank">School of Information</a> and minoring in Business Administration through the <a href = "https://michiganross.umich.edu/" target="_blank">Ross School of Business.</a> 
+                    <br> 
+                    <br>Since going vegan four and a half years ago, I have fallen in love with cooking and food! I created an Instagram account called <a href ="https://www.instagram.com/bitesbytm/" target="_blank">BitesbyTM</a> a few years ago and I've decided to create this blog to further share how I focus on healthy eating while in college!
+                    </p>
+                </div>
+        </div>
                 
                 
                 
                 <!-- image gallery -->
                 <div class="gallery">
                     <div class="gallery-images">
-                    <img src="images/alfredoseitanpizza.jpg" alt="vegan alfredo seitan pizza photo"/>
-                    <img src="images/chickpeaalteats.jpg" alt="Chickpea 'Tuna' Salad Sandwich photo"/>
-                    <img src="images/lunchroomtacosalad.JPG" alt="Taco Salad photo"/>
-                
-                    <img src="images/stirfrynoodle.JPG" alt="Noodle Stir Fry photo"/>
-                    <img src="images/stuffedmushrooms.JPG" alt="Stuffed Mushrooms photo"/>
-                    <img src="images/smoltaco.JPG" alt="Taco photo"/>
+                        <div class="pizza">
+                            <figure>
+                                <img src="images/alfredoseitanpizza.jpg" alt="vegan alfredo seitan pizza photo"/>
+                                <figcaption>This is a vegan alfredo seitan pizza from my favorite vegan restaurant at home, Green Fusion! Seitan is one of my favorite mock meats, it is made from vital wheat gluten!</figcaption>
+                            </figure>
+                        </div>
+                        <div class="chickpeatuna">
+                            <figure>
+                                <img src="images/chickpeaalteats.jpg" alt="vegan chickpea 'tuna' salad sandwich photo"/>
+                                <figcaption>Vegan tuna salad made from chickpeas! This one from Alt Eats was so good I started making my own!</figcaption>                            
+                            </figure>
+                        </div>
+                        <div class="tacosalad">
+                            <figure>
+                                <img src="images/lunchroomtacosalad.JPG" alt="Taco Salad photo"/>
+                                <figcaption>The Lunch Room/Detroit Street Filling Station is one of my favorite restaurants in Ann Arbor, I love this taco salad!</figcaption>                            
+                            </figure>
+                        </div>
+                        
+                        <div class="stirfrynoodle">
+                            <figure>
+                                <img src="images/stirfrynoodle.JPG" alt="Noodle Stir Fry photo"/>
+                                <figcaption>Noodle stir fry's are my favorite! So customizable and super quick!</figcaption>                            
+                            </figure>
+                        </div>
+                        <div class="stuffedmushrooms">
+                            <figure>
+                                <img src="images/stuffedmushrooms.JPG" alt="Stuffed Mushrooms photo"/>
+                                <figcaption>Going vegan made me discover how much I love mushrooms... I can't get enough of this stuffed mushroom dish.</figcaption>                            
+                            </figure>
+                        </div>
+                        <div class="taco">
+                            <figure>
+                                <img src="images/smoltaco.JPG" alt="Taco photo"/>
+                                <figcaption>Tacos are an amazing option as they are so customizable.</figcaption>                            
+                            </figure>
+                        </div>
+
+                        <div class="wagamama">
+                            <figure>
+                                <img src="images/wagamama.JPG" alt="Asian Rice Dish photo"/>
+                                <figcaption>Wagamama (based mostly in Europe), has always been one of my favorite restuarants growing up. They now have several vegan dishes including this one which has a vegan egg! </figcaption>                            
+                            </figure>
+                        </div>
+                    
+                        <div class="hummus">
+                            <figure>
+                                <img src="images/hummuspita.jpg" alt="hummus pita photo"/>
+                                <figcaption>I'm  half middle eastern so hummus and pita is one of my favorite snacks or appetizers!</figcaption>
+                            </figure>
+                        </div>
             
-                    <img src="images/wagamama.jpg" alt="Asian Rice Dish photo"/>
-                    <img src="images/salad.JPG" alt="salad photo"/>
-                    <img src="images/hummuspita.JPG" alt="Hummus Pita photo"/>
+     `       
+                    
                     </div> 
                     
-    
+                
                 </div> 
-            </div> 
-            </div>
+                <div class="contact">
 
-        <footer>
-            <p>Tara Moore<br/>
-            Vegan Food Inspiration!</p>
-        </footer>
+                    <h2>CONTACT ME!</h2>
+              
+                    <p>Interested in talking about cooking, any of my recipes, or veganism? Reach out and let’s​ ​chat!</p>
+                  <div class="form">
+                    <form action="https://formspree.io/f/xvovblkv" method="POST">
+                    
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="Your email..">
+                     
+                      <label for="note">Note</label>
+                      <textarea id="note" name="note" placeholder="Write something.."></textarea>
+              
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
+                </div> 
     </main>
+    <footer>
+        <p>Tara Moore<br>
+        Vegan Food Inspiration! <br>
+        <a href ="https://www.instagram.com/bitesbytm/" target="_blank">Instagram</a><br>
+        <a href ="https://www.linkedin.com/taramoore31/" target="_blank">LinkedIn</a><br>
+        </p>
+    </footer>
     </body>
 </html>
-
+ 

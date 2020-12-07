@@ -1,90 +1,118 @@
 html{
     scroll-behavior: smooth;
-    height: 100%;
-}
-    
-    
-a.activePage{ 
-    text-decoration: underline;
-    background-color: #A2629B;
-    color: white; 
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 body{
-    background-color: rgb(214, 214, 214);
+    background-color: #f1faee;
     font-size: 18px;
     margin: 0 auto;
     padding: 0;
-    font-family: 'Quicksand';
+    font-family: 'Montserrat', sans-serif;
+}
+.tara_picture{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+    height: auto;
 }
 
+
+/*
+
+Paragraph Headers */
 h1{
     font-size: 50px;
-    color: #A2629B;
+    color: #643f53;
     line-height: 1;
-    padding-bottom: 50px; 
+    padding-top: 20px;
+    padding-bottom: 30px; 
     text-align: center;
     display: block;
     font-weight: bold;
-    font-family: 'Lora';
+    font-family: 'Playfair Display', serif;
 }
-
-    
+ 
 h2{
     font-size: 32px;
     line-height: 1.5;
-    text-align: left;
+    color: #643f53;
+    text-align: center;
     display: block;
+    font-family: 'Playfair Display', 'serif';
+    padding-top: 30px;
 }
-    
-h2 {
-    text-align: center; 
-    font-size: 30px; 
-    padding: 25px 10px 10px 10px;
+
+h3{
+    font-size: 22px;
+    color: #1d3557;
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
 }
     
 p{
     font-size: 18px;
     line-height: initial;
-    text-align: left;
+    text-align: center;
     display: block;
-    padding: 10px 0;     
+    padding: 10px;  
+    color: #1d3557;   
 }
-    
+
+nav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+a.activePage{ 
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1d3557;
+}
+
 nav li{
     float:left; 
     align-content: center; 
 }
-    
-header{
-    display:flex;
-    justify-content: center;
-    list-style:none;  
-    align-content: center;
-    background-color: #A2629B;
-    padding: 0;
-    text-decoration-color: black;
-
-}
-    
-
 nav a{
     display:block; 
     text-align: center;
     width: 150px; 
     text-decoration: none;
-    color: black;
+    color: #643f53;
 }
-    
+
+nav ul{
+    display: flex;
+    list-style-type:none;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 nav a:hover{
     text-decoration: underline;
     text-transform: uppercase;
+    color: #1d3557;
 }
-    
+
+nav{
+    border-bottom: 2px solid #1d3557;
+    border-top: 2px solid #1d3557;
+    background-color: rgb(128, 155, 206, 0.5);
+}
+
+
+/*Skip */
 .skip a{
-    background: rgb(214, 214, 214);
+    background: #f1faee;
     left: 0;
     padding: 6px;
     position: absolute;
@@ -99,7 +127,7 @@ a.skip{
 }
     
 .skip a:focus, .skip a:active{
-    border: 2px slid black;
+    border: 2px slid #022449;
     left: auto;
     top:auto;
     height: auto;
@@ -109,101 +137,38 @@ a.skip{
     z-index: 999;
 }
     
-*:focus{
-    border: 2px solid black;
+/* Footer  */ 
+footer {
+    background-color: rgb(128, 155, 206, 0.5);
+    color: #f1faee;
+    grid-column: 1 / -1;
+    grid-row: 7 / auto;
+    padding-top: 5px;
+    text-align: left;
+    border-top: 2px solid #1d3557;
+    border-bottom: 2px solid #1d3557;
 }
-    
-    
-footer{
-    background-color: #A2629B;
-    color: rgb(214, 214, 214);
-    grid-column: 1 / -1;  
-    grid-row: 7 / auto;   
-    padding-top: 30px;
-}
-#container{
-    display:block;
-    box-sizing: border-box;
-    padding: 1em;
-}
- 
+
+/* home page */
 .about{
     padding: 50px; 
 }
-    
-.nav{
-    padding: 20px 0; 
-    text-align: right; 
-    align-content: center;
-    grid-column-start: 1; 
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end:2;
-}
-.breakfast-format{
-    /*
-    display: grid;
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
-    grid-auto-rows: auto 350px;
-    justify-content: center;
-    align-self: center; */
-    grid-column: 2/ span 1;
-}
 
-.lunch-format{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
-    grid-auto-rows: auto 350px;
-    justify-content: center;
-    align-self: center;
-}
-
-.dinner-format{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
-    grid-auto-rows: auto 350px;
-    justify-content: center;
-    align-self: center;
-}
-.restaurants-format{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
-    grid-auto-rows: auto 350px;
-    justify-content: center;
-    align-self: center;
-}
-
-.form{
+.container{
     display: flex;
     flex-direction: column;
-    background-color: white; /* colour added just for visibility purposes when debugging */
-    /* margin: auto; */
-    /* height: 200px;  */
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    resize: vertical; 
-  
-    }
-    
-.about > div {
-    margin-bottom: 40px;
-    }
-
-.text-block{
-    text-align: center; 
-    margin: auto 0;
-    background-color: rgb(214, 214, 214); 
-    border: 10px solid black;
-    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1faee;
+    margin: auto;
 }
-    
+
 .gallery-images {
     display: flex; 
-    flex-wrap: wrap; 
-    flex-direction: row; 
-    padding: 0 4px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
 }
     
 .gallery-images img{
@@ -213,94 +178,647 @@ footer{
     background-color: rgb(214, 214, 214);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-  
-.breakfast-format img{
-    grid-column: 1 / -1;
-    max-height: 700px;
-    overflow: hidden;
+figcaption {
+    background-color: #f1faee;
+    color: #985d5f;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
 
+.contact{
+    background-color: rgb(128, 155, 206, 0.5);
+    margin: 50px;
+    border: 2px solid #1d3557;
 }
-
-.lunch-format img{
-    width: 80%;
+.form{
+    grid-row: 1 / span 1;
     padding: 20px;
 }
 
-.dinner-format img{
-    width: 80%;
-    padding: 20px;
+input[type=text], input[type=email], textarea{
+ 	width: 100%;
+	padding: 12px 20px;
+ 	margin: 8px 0;
+	display: inline-block;
+ 	border: 1px solid #ccc;
+ 	border-radius: 4px;
+ 	box-sizing: border-box;
 }
 
-.restaurants-format img{
-    width: 80%;
-    padding: 20px;
+input[type=submit]{
+ 	width: 100%;
+	background-color: #985d5f;
+	color: #f1faee;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
-@media screen and (min-width: 800px){
-
-#container{
-  background-color: rgb(214, 214, 214);
-  box-sizing: border-box;
-  width: 90vw;
-  margin: 0 auto;
+input[type=submit]:hover{
+	background-color: #643f53;
 }
 
-.breakfast-text{
-    padding: 10px;
+input[type=submit]:focus{
+	background-color: #bab2b5;
 }
 
-.lunch-text{
-    padding: 10px;
-}
+/* mobile */
 
-.dinner-text{
-    padding: 10px;
-}
-
-.restaurants-text{
-    padding: 10px;
-}
-  
-.about-text{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 40px;
-    flex: 1;
-}
- 
-.gallery{
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 20px;
-    
-}
-    
-.gallery-images{
+.container-b{
     display: grid;
-    grid-template: repeat(3, 300px) / repeat(3, 300px);
-    
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-row-gap: 15px;
 }
-    
-.gallery-images img{
-    object-fit: cover;
+
+.container-l{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-row-gap: 15px;
+}
+
+.container-d{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-row-gap: 15px;
+}
+.smoothie-image img, .tofuscramble-image img, .avotoast-image img{
+    max-width: 300px;
+    height: auto;
+    align-items: center;
+    padding: 5px;
+}
+
+.salad-image img, .chickpeatuna-image img, .burrito-image img{
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
+}
+
+.lasagna-image img, .lentilsoup-image img, .stirfry-image img{
+    max-width: 300px;
+    overflow: hidden;
+    height: auto;
+    align-items: right;
+    padding: 5px;
+}
+.pastaflip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.pastaflip-card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-@media (max-width: 400px) {
-    .gallery-images {
-      display: block;
-      padding: 20px;
+.pastaflip-card:hover .pastaflip-card-inner,
+.pastaflip-card:focus-within .pastaflip-card-inner,
+.pastaflip-card:active .pastaflip-card-inner,
+.pastaflip-card:focus .pastaflip-card-inner {
+transform: rotateY(180deg);
+}
+
+.pastaflip-card-front, .pastaflip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.pastaflip-card-back {
+    transform: rotateY(180deg);
+}
+
+#pasta img{
+    height: 300px;
+    width: 300px;
+}
+
+.container-r{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+}
+.lrflip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.lrflip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.lrflip-card:hover .lrflip-card-inner,
+.lrflip-card:focus-within .lrflip-card-inner,
+.lrflip-card:active .lrflip-card-inner,
+.lrflip-card:focus .lrflip-card-inner {
+transform: rotateY(180deg);
+}
+
+.lrflip-card-front, .lrflip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.lrflip-card-back {
+    transform: rotateY(180deg);
+}
+
+.lrflip-card-inner img{
+    height: auto;
+    width: 300px;
+}
+#lunchroom_list{
+    margin-left: 50px;
+}
+.about {
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(241, 250, 238);
+}
+/* desktop view */
+
+@media screen and (min-width: 1024px){
+    .tara_picture{
+        width: 400px;
+        height: auto;
+        padding-left: 50px;
+    }
+    nav ul{
+        display: flex;
+        list-style-type:none;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+    
+
+    .breakfast-format{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        grid-auto-rows: auto 350px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .lunch-format{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        grid-auto-rows: auto 350px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .dinner-format{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        grid-auto-rows: auto 350px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .rest-format{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        grid-auto-rows: auto 350px;
+        justify-content: center;
+        align-self: center;
+        margin-left: 80px;
+    }
+    .smoothie-image img, .tofuscramble-image img, .avotoast-image img{
+        max-width: 300px;
+        height: auto;
+        align-items: center;
+        margin-left: 80px;
 
     }
-  }
+    
+    .salad-image img, .chickpeatuna-image img, .burrito-image img{
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .lasagna-image img, .lentilsoup-image img, .stirfry-image img{
+        max-width: 300px;
+        overflow: hidden;
+        height: auto;
+        align-items: right;
+        margin-left: 80px;
+    }
+
+    .lrflip-card-inner img{
+        height: auto;
+        width: 400px;
+    }
+    #lunchroom_list{
+        margin-left: 70px;
+    }
+        
+    .about > div {
+        margin-bottom: 40px;
+        }
+
+    .text-block{
+        text-align: center; 
+        margin: auto 0;
+        background-color: rgb(214, 214, 214); 
+        border: 10px solid black;
+        padding: 30px;
+    }
+   
+    .about {
+        /*padding: 20px 40px 40px;
+        max-width: 640px;
+        &-text {
+          flex: 1 1 auto;
+        }*/
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+    .gallery-images {
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: row; 
+        padding: 0 4px;
+        margin: 15px;
+        
+    }
+        
+
+    figcaption{
+        overflow: auto;
+    }
+
+
+    .pizza figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .pizza figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .pizza figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .chickpeatuna figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .chickpeatuna figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .chickpeatuna figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .tacosalad figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .tacosalad figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .tacosalad figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .stirfrynoodle figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .stirfrynoodle figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .stirfrynoodle figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .stuffedmushrooms figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .stuffedmushrooms figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .stuffedmushrooms figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .taco figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .taco figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .taco figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .wagamama figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .wagamama figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .wagamama figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .hummus figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 325px;
+        width: 325px;
+        position: absolute;
+    }
+
+    .hummus figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 325px;
+        width: 325px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .hummus figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+/*
+    .gallery-images img{
+        object-fit: cover;
+        width: 100%;
+        padding: 0 1px; 
+        background-color: rgb(214, 214, 214);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+*/
+
+    .lunch-format img{
+        width: 80%;
+        padding: 20px;
+    }
+
+    .dinner-format img{
+        width: 80%;
+        padding: 20px;
+    }
+
+    .rest-format img{
+        width: 80%;
+        padding: 20px;
+    }
+    footer {
+        background-color: rgb(128, 155, 206, 0.5);
+        color: #f1faee;
+        grid-column: 1 / -1;
+        grid-row: 7 / auto;
+        padding-top: 5px;
+    }
+
+@media screen and ((min-width: 760px) and (max-width: 1024px)){
+    .tara_picture{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+    }
+    nav ul{
+        display: flex;
+        list-style-type:none;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+    #container{
+    background-color:  #f2f2f2;
+    box-sizing: border-box;
+    width: 90vw;
+    margin: 0 auto;
+    }
+
+    .breakfast-text{
+        padding: 10px;
+    }
+
+    .lunch-text{
+        padding: 10px;
+    }
+
+    .dinner-text{
+        padding: 10px;
+    }
+
+    .restaurants-text{
+        padding: 10px;
+    }
+    
+    .about-text{
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 40px;
+        flex: 1;
+    }
+    
+    .gallery{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 20px;
+        
+    }
+        
+    .gallery-images{
+        display: grid;
+        grid-template: repeat(3, 300px) / repeat(3, 300px);
+        
+    }
+        
+    .gallery-images img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        
+    }
 
 @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto;
     }
+    .flip-card-inner {
+        transition: transform none;
 }  
     
 .skip a{
@@ -318,36 +836,7 @@ footer{
     top:0;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+.contact{
+    grid-row: 1 / span 1;
+    margin: 50px;
+}

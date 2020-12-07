@@ -6,8 +6,8 @@
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5B21711W42"></script>
@@ -20,60 +20,60 @@
         </script>
     </head>
     <body>
-        <header>
-            <div class="skip"><a href="#main">Skip to Main Content</a></div>
-            <div class="nav">
-                <nav>
-                  <ul>
-                      <li><a href="index.html">About</a></li>
-                      <li><a href="breakfast.html">Breakfst</a></li>
-                      <li><a href="lunch.html">Lunch</a></li>
-                      <li><a href="dinner.html">Dinner</a></li>
-                      <li><a href="restaurants.html" class= "activePage">Restaurants</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-            </div>
-        </header>
-    <main>
-        
+        <div class="skip"><a href="#h-rest">Skip to Main Content</a></div>
         <div class="nav">
-        </div> 
-        <div id="container">
-            <div class = "container3" >
-            <h1>RESTAURANTS</h1>
-            </div>
-            <p> Eating vegan or plant based at restaurants can definitely be tricky at first. I've learned to check menus before I go places, look up reviews, or
-              call ahead to see if there are options! I've found that the majority of the time, restuaurants are incredibly accomodating! I've also learned to get 
-              creative when eating at restaurants, occasionally making meals out of sides! Below are some of my favorite restaurants, and tips for eating vegan at restaurants!
-            </p>
-
-        <div class="restaurants-format">
-        <div class="restaurants-text">
-            <a name="lunch-room"></a>
-            <h2>The Lunch Room</h2>
-            <p>The Lunch Room/Detroit Filling Station is located here in Ann Arbor, Michigan and is one of my favorites! Some of my favorite dishes are:
+            <nav>
               <ul>
-                <li>Taco Salad</li>
-                <li>Mac and Cheese</li>
-                <li>Tofu Bahn Mi</li>
-                <li>Chkn Nuggets</li>
+                  <li><a href="index.html">About</a></li>
+                  <li><a href="breakfast.html">Breakfast</a></li>
+                  <li><a href="lunch.html">Lunch</a></li>
+                  <li><a href="dinner.html">Dinner</a></li>
+                  <li><a href="restaurants.html" class= "activePage">Restaurants</a></li>
               </ul>
-            </p>         
+            </nav>
         </div>
-        <div class="tacosalad-image">
-            <img src="images/lunchroomtacosalad.JPG" alt="The Lunch Room Taco Saladphoto"/>
-        </div> 
-        </div>
-        </div>
+        <header id = 'h-rest'>
+                <h1>RESTAURANTS</h1>
+                <p> Eating vegan or plant based at restaurants can definitely be tricky at first. I've learned to check menus before I go places, look up reviews, or
+                  call ahead to see if there are options! I've found that the majority of the time, restuaurants are incredibly accomodating! I've also learned to get 
+                  creative when eating at restaurants, occasionally making meals out of sides! Below are some of my favorite restaurants, and tips for eating vegan at restaurants!
+                </p> 
+        </header>
+    <main class = "rest" id = "rest-header">
+        <div id = "container-r">
 
+            <div class="rest-format">
+                <div class="lunchroom"> 
+                    <h2>The Lunch Room</h2>
+                    <p>The Lunch Room/Detroit Filling Station is located here in Ann Arbor, Michigan and is one of my favorites! Some of my favorite dishes are:
+                    <ul id = "lunchroom_list">
+                        <li>Taco Salad</li>
+                        <li>Mac and Cheese</li>
+                        <li>Tofu Bahn Mi</li>
+                        <li>Chkn Nuggets</li>
+                    </ul>
+                    </p>         
+                </div>
+                <div tabindex = "0" class="lrflip-card">
+                    <div class="lrflip-card-inner">
+                        <div class="lrflip-card-front">
+                            <img src="images/lunchroomtacosalad.JPG" alt="The Lunch Room Taco Saladphoto"/>
+                        </div>
+                        <div class="lrflip-card-back">
+                          <img src="images/veganmac.jpg" alt="The Lunch Room Vegan Mac and Cheese photo">
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>  
+    </main>
 
     <footer>
-        <p> Tara Moore <br/>
-        Vegan Food Inspiration!</p>
+        <p>Tara Moore<br>
+            Vegan Food Inspiration! <br>
+            <a href ="https://www.instagram.com/bitesbytm/" target="_blank">Instagram</a><br>
+            <a href ="https://www.linkedin.com/taramoore31/" target="_blank">LinkedIn</a><br>
+            </p>
     </footer>
-
-  
-    </main>
     </body>
 </html>

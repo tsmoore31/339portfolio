@@ -6,8 +6,8 @@
       <link rel="stylesheet" type="text/css" href="css/html5reset.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-5B21711W42"></script>
@@ -21,73 +21,65 @@
     </head>
     
     <body>
+      <div class="skip"><a href="#h-dinner">Skip to Main Content</a></div>
+      <div class="nav">
+        <nav>
+          <ul>
+              <li><a href="index.html">About</a></li>
+              <li><a href="breakfast.html">Breakfast</a></li>
+              <li><a href="lunch.html">Lunch</a></li>
+              <li><a href="dinner.html" class= "activePage">Dinner</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+          </ul>
+        </nav>
+    </div>
       <header>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
-        <div class="nav">
-            <nav>
-              <ul>
-                  <li><a href="index.html">About</a></li>
-                  <li><a href="breakfast.html">Breakfast</a></li>
-                  <li><a href="lunch.html">Lunch</a></li>
-                  <li><a href="dinner.html" class= "activePage">Dinner</a></li>
-                  <li><a href="restaurants.html">Restaurants</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-        </div>
-      </header>
-    <main>
-      <div id="container">
-          <div class = "container3" >
           <h1>DINNER IDEAS</h1>
-          </div>
           <p> I love dinner. There is nothing more relaxing for me, than just getting to take the time to make myself a delicious meal! This is where I usually
             have the most time to prep a meal, so these are definitely a little more time intensive than my breakfast and lunch meals.
           </p>
-
-    <div class="dinner-format">
-      <div class="dinner-text">
-        <a name="pasta"></a>
-        <h2>Pasta</h2>
-        <p> Pasta is one of my favorite things to eat for dinner... there are just so many varieties! <br> Some of my favorites are:
-          <ul>
-            <li>Pesto Pasta</li>
-            <li>Vegan Pasta Bolognese</li>
-            <li>Hummus Pasta (Great for when you are out of tomato sauce!)</li>
-            
-          </ul>
-        </p>
-      </div>
-      <div class="pestopasta-image">
-        <img src="images/pestopasta.jpeg" alt="pesto pasta photo"/>
-      </div>
-      </div> 
         
-      <div class = "dinner-format">
-        <div class="dinner-text">
-          <a name="lasagna"></a>
-          <h2>Lasagna</h2>
-          <p> This lasagna was too good to be roped into the general pasta category!! I love dishes like this because they have a great mix of protein, carbs and fat, 
-            and also can last me a week! I made this lasagna pictured a few weeks ago and was able to have that as my main meal for awhile which proved to be very cost 
-            effective as well! The ingredients I used were:
-              <ul>
-                <li>Tomato Sauce with lentils (bolognese style, lots of protein!)</li>
-                <li>Spinach</li>
-                <li>Vegan Mozzerella Cheese</li>
-                <li>Vegan Ricotta Cheese (Tofu, Nutritional Yeast, Garlic, Onion, Lemon Juice, Olive Oil, Salt and Pepper!)
-              </ul>
-            <br>
-            Feel free to add in your own favorite veggies and make fun combinations! I've also made this with eggplant rather than lasagna noodles and it was delicious!
+      </header>
+    <main class = "dinner">
+    <div id = "container-d">
+
+      <div class="dinner-format">
+        <div class="pasta">
+          <h2>Pasta</h2>
+          <p> Pasta is one of my favorite things to eat for dinner... there are just so many varieties! Some of my favorites are: Pesto Pasta, Vegan Pasta Bolognese, Hummus Pasta (Great for when you are out of tomato sauce!)
+              
           </p>
+        </div>
+        <div tabindex = "0" class="pastaflip-card">
+          <div class="pastaflip-card-inner">
+              <div class="pastaflip-card-front">
+                <img src="images/pestopasta.jpeg" alt="pesto pasta photo">
+              </div>
+              <div class="pastaflip-card-back">
+                <img src="images/trufflemushroompasta.jpeg" alt="truffle mushroom pasta photo">
+              </div>
+          </div>
+        </div>  
+      </div> 
+
+        
+          <div class="dinner-format">
+            <div class="lasagna">
+              <h2>Lasagna</h2>
+              <p> This lasagna was too good to be roped into the general pasta category!! I love dishes like this because they have a great mix of protein, carbs and fat, 
+                and also can last me a week! I made this lasagna pictured a few weeks ago and was able to have that as my main meal for awhile which proved to be very cost 
+                effective as well! The ingredients I used were: Tomato Sauce with lentils (bolognese style, lots of protein!), Spinach, Vegan Mozzerella Cheese, Vegan Ricotta Cheese (Tofu, Nutritional Yeast, Garlic, Onion, Lemon Juice, Olive Oil, Salt and Pepper!)
+                Feel free to add in your own favorite veggies and make fun combinations! I've also made this with eggplant rather than lasagna noodles and it was delicious!
+              </p>
         </div>
         <div class="lasagna-image"> 
           <img src="images/lasagna.jpg" alt="Lasagna photo" />
         </div> 
-      </div> 
-    
-      <div class="dinner-format">
-        <div class="dinner-text">
-          <a name="LentilSoup"></a>
+        </div> 
+ 
+
+          <div class="dinner-format">
+          <div class="lentilsoup">
           <h2>Lentil Soup</h2>
           <p> My mom is from Turkey and her Lentil Soup is one of my favorite things to have for dinner! Especially when it gets colder here in Michigan, there is nothing
             like warming myself up with some soup that reminds me of home. I love being able to connect with my heritage through food, and learn to cook Turkish food from my mom.
@@ -95,13 +87,13 @@
         </div>
         <div class="lentilsoup-image">
           <img src="images/lentilsoup.JPG" alt="lentil soup photo" />
+        </div>
         </div> 
 
-      </div> 
 
-      <div class="dinner-format">
-        <div class="dinner-text">
-          <a name="StirFry"></a>
+
+          <div class="dinner-format">
+          <div class="stirfry">
           <h2>Stir Fry</h2>
           <p> Stir fries are some of my favorite dinners! I love using noodles or making more of a fried rice. I have perfected my crispy tofu recipe and it goes perfectly with 
             these dishes. I have also started adding in vegan egg into my fried rice when I have it on hand which reminds me of when I was younger! Stir fries are a great way 
@@ -112,14 +104,17 @@
           <img src="images/friedrice.JPG" alt="Fried Rice photo" />
         </div> 
       </div>
-      </div> 
-
-      <footer>
-          <p> Tara Moore <br/>
-          Vegan Food Inspiration!</p>
-      </footer>
+    </div>
 
     </main>
+    <footer>
+      <p>Tara Moore<br>
+        Vegan Food Inspiration! <br>
+        <a href ="https://www.instagram.com/bitesbytm/" target="_blank">Instagram</a><br>
+        <a href ="https://www.linkedin.com/taramoore31/" target="_blank">LinkedIn</a><br>
+        </p>
+    </footer>
+
     </body>
 </html>
 
