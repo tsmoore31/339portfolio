@@ -715,13 +715,6 @@ transform: rotateY(180deg);
         grid-template: repeat(3, 300px) / repeat(3, 300px);
         
     }
-    .gallery-images img{
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-        margin: 10px;
-    }
-        
 
     figcaption{
         overflow: auto;
@@ -970,15 +963,6 @@ transform: rotateY(180deg);
         visibility: visible;
         opacity: 1;
     }
-/*
-    .gallery-images img{
-        object-fit: cover;
-        width: 100%;
-        padding: 0 1px; 
-        background-color: rgb(214, 214, 214);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-*/
 
     .lunch-format img{
         width: 80%;
