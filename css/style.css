@@ -17,6 +17,21 @@ body{
     height: auto;
 }
 
+header{
+    animation-name: header_animation;
+    animation-duration: 5s;
+    margin-bottom: 15px;
+}
+
+@-webkit-keyframes header_animation{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@keyframes header_animation{
+	from {opacity: 0}
+	to {opacity: 1}
+}
 
 /*
 
@@ -59,15 +74,7 @@ p{
     color: #1d3557;   
 }
 
-nav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  }
-  
+
 a.activePage{ 
     text-decoration: underline;
     font-weight: bold;
@@ -225,7 +232,7 @@ input[type=submit]:focus{
 	background-color: #bab2b5;
 }
 
-/* mobile */
+/* pages */
 
 .container-b{
     display: grid;
@@ -256,23 +263,40 @@ input[type=submit]:focus{
 .smoothie-image img, .tofuscramble-image img, .avotoast-image img{
     max-width: 300px;
     height: auto;
-    align-items: center;
     padding: 5px;
+    margin: auto;
 }
 
-.salad-image img, .chickpeatuna-image img, .burrito-image img{
+.smoothie, .tofu-scramble, .avocado-toast{
+    background-color: rgb(152, 93, 95, 0.25);
+    margin: 20px;
+}
+
+.salad-image img, .chickpeatuna-image img, .falafel-image img{
     max-width: 300px;
     height: auto;
     padding: 5px;
+    margin: auto;
+}
+
+.salad, .chickpeatuna, .falafel{
+    background-color: rgb(152, 93, 95, 0.25);
+    margin: 20px;
 }
 
 .lasagna-image img, .lentilsoup-image img, .stirfry-image img{
     max-width: 300px;
     overflow: hidden;
     height: auto;
-    align-items: right;
+    
     padding: 5px;
 }
+
+.pasta, .lasagna, .lentilsoup, .stirfry{
+    background-color: rgb(152, 93, 95, 0.25);
+    margin: 20px;
+}
+
 .pastaflip-card {
     background-color: transparent;
     width: 300px;
@@ -311,8 +335,8 @@ transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
-#pasta img{
-    height: 300px;
+.pastaflip-card-inner img{
+    height: auto;
     width: 300px;
 }
 
@@ -368,12 +392,122 @@ transform: rotateY(180deg);
 }
 #lunchroom_list{
     margin-left: 50px;
+    color: #1d3557;
 }
+#greenfusion_list{
+    margin-left: 50px;
+    color: #1d3557;
+}
+
+#veggiegrill_list{
+    margin-left: 50px;
+    color: #1d3557;
+}
+
+#tips_list{
+    margin-left: 50px;
+    color: #1d3557;
+}
+
+.gfflip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.gfflip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.gfflip-card:hover .gfflip-card-inner,
+.gfflip-card:focus-within .gfflip-card-inner,
+.gfflip-card:active .gfflip-card-inner,
+.gfflip-card:focus .gfflip-card-inner {
+transform: rotateY(180deg);
+}
+
+.gfflip-card-front, .gfflip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.gfflip-card-back {
+    transform: rotateY(180deg);
+}
+
+.gfflip-card-inner img{
+    height: auto;
+    width: 300px;
+}
+
+.vgflip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.vgflip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.vgflip-card:hover .vgflip-card-inner,
+.vgflip-card:focus-within .vgflip-card-inner,
+.vgflip-card:active .vgflip-card-inner,
+.vgflip-card:focus .vglip-card-inner {
+transform: rotateY(180deg);
+}
+
+.vgflip-card-front, .vgflip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.vgflip-card-back {
+    transform: rotateY(180deg);
+}
+
+.vgflip-card-inner img{
+    height: auto;
+    width: 300px;
+}
+
+.restaurant-text{
+    display: block;
+    margin: 20px 20px;
+    padding: 3px;
+    background-color: rgb(152, 93, 95, 0.25);
+    border: 2px solid #1d3557;
+}
+
 .about {
     align-items: center;
     justify-content: center;
     background-color: rgba(241, 250, 238);
 }
+
 /* desktop view */
 
 @media screen and (min-width: 1024px){
@@ -381,7 +515,22 @@ transform: rotateY(180deg);
         width: 400px;
         height: auto;
         padding-left: 50px;
+        animation-name: tara_animation;
+        animation-duration: 8s;
     }
+
+    @-webkit-keyframes tara_animation{
+        from {width: 100px}
+        to {width: 400px}
+      
+      }
+      
+      @keyframes tara_animation{
+        from {width: 100px}
+        to {width: 400px}
+      
+      } 
+      
     nav ul{
         display: flex;
         list-style-type:none;
@@ -426,19 +575,55 @@ transform: rotateY(180deg);
         align-self: center;
         margin-left: 80px;
     }
+
+    .restaurant-text{
+        display: block;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: rgb(152, 93, 95, 0.25);
+        border: 2px solid #1d3557;
+    }
     .smoothie-image img, .tofuscramble-image img, .avotoast-image img{
         max-width: 300px;
         height: auto;
-        align-items: center;
+        justify-items: center;
         margin-left: 80px;
 
     }
+
+    .tofuscramble-image{
+        grid-row: 1 / -1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .smoothie-image, .avotoast-image{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
     
-    .salad-image img, .chickpeatuna-image img, .burrito-image img{
+
+    
+    .salad-image img, .chickpeatuna-image img, .falafel-image img{
         max-width: 300px;
         height: auto;
     }
+    .chickpeatuna-image{
+        grid-row: 1 / -1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .salad-image, .falafel-image{
+        margin-left: auto;
+        margin-right: auto;
+    }
     
+
+
     .lasagna-image img, .lentilsoup-image img, .stirfry-image img{
         max-width: 300px;
         overflow: hidden;
@@ -447,13 +632,48 @@ transform: rotateY(180deg);
         margin-left: 80px;
     }
 
+    .lasagna-image{
+        grid-row: 1 / -1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .stirfry-image{
+        grid-row: 1 / -1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lentilsoup-image{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
     .lrflip-card-inner img{
         height: auto;
         width: 400px;
     }
     #lunchroom_list{
         margin-left: 70px;
+        color: #1d3557;
     }
+
+    #greenfusion_list{
+        margin-left: 70px;
+        color: #1d3557;
+    }
+
+    #veggiegrill_list{
+        margin-left: 70px;
+        color: #1d3557;
+    }
+
+    #tips_list{
+        margin-left: 70px;
+        color: #1d3557;
+    }
+        
         
     .about > div {
         margin-bottom: 40px;
@@ -478,13 +698,25 @@ transform: rotateY(180deg);
         
       }
 
-    .gallery-images {
+    .gallery {
         display: flex; 
         flex-wrap: wrap; 
         flex-direction: row; 
         padding: 0 4px;
         margin: 15px;
+    }
         
+
+    .gallery-images{
+        display: grid;
+        grid-template: repeat(3, 300px) / repeat(3, 300px);
+        
+    }
+    .gallery-images img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        margin: 10px;
     }
         
 
@@ -497,15 +729,15 @@ transform: rotateY(180deg);
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .pizza figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -520,19 +752,19 @@ transform: rotateY(180deg);
         opacity: 1;
     }
 
-    .chickpeatuna figure img{
+    .alteatschickpeatuna figure img{
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
-    .chickpeatuna figure figcaption{
+    .alteatschickpeatuna figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -542,7 +774,7 @@ transform: rotateY(180deg);
         transition: opacity .2s, visibility .2s;
     }
 
-    .chickpeatuna figure:hover figcaption{
+    .alteatschickpeatuna figure:hover figcaption{
         visibility: visible;
         opacity: 1;
     }
@@ -551,15 +783,15 @@ transform: rotateY(180deg);
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .tacosalad figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -578,15 +810,15 @@ transform: rotateY(180deg);
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .stirfrynoodle figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -605,15 +837,15 @@ transform: rotateY(180deg);
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .stuffedmushrooms figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -632,15 +864,15 @@ transform: rotateY(180deg);
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .taco figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -659,15 +891,15 @@ transform: rotateY(180deg);
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .wagamama figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -686,15 +918,15 @@ transform: rotateY(180deg);
         border: none;
         margin: 0px;
         padding: 0px;
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         position: absolute;
     }
 
     .hummus figure figcaption{
         background: rgba(250, 235, 215,.5);
-        height: 325px;
-        width: 325px;
+        height: 300px;
+        width: 300px;
         text-align: center;
         margin: auto;
         color: black;
@@ -705,6 +937,33 @@ transform: rotateY(180deg);
     }
 
     .hummus figure:hover figcaption{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .thebagel figure img{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .thebagel figure figcaption{
+        background: rgba(250, 235, 215,.5);
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .thebagel figure:hover figcaption{
         visibility: visible;
         opacity: 1;
     }
@@ -805,7 +1064,7 @@ transform: rotateY(180deg);
         grid-template: repeat(3, 300px) / repeat(3, 300px);
         
     }
-        
+    
     .gallery-images img{
         object-fit: cover;
         width: 100%;
@@ -813,12 +1072,45 @@ transform: rotateY(180deg);
         
     }
 
+    .pizza figure img, .alteatschickpeatuna figure img, .tacosalad figure img, .stirfrynoodle figure img, 
+    .stuffedmushrooms figure img, .wagamama figure img, .hummus figure img, .thebagel figure img{
+        margin: 5px;
+   
+    }
+
+    nav li{
+        float:left; 
+        align-content: center;
+        font-size: 24px; 
+    }
+
+
 @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto;
     }
-    .flip-card-inner {
+    .lrflip-card-inner {
         transition: transform none;
+    }
+    
+    .pastaflip-card-inner {
+        transition: transform none;
+    }
+
+    .gfflip-card-inner {
+        transition: transform none;
+    }
+
+    .vgflip-card-inner {
+        transition: transform none;
+    }
+    header{
+        animation: none;
+    }
+
+    .tara_picture{
+        animation: none;
+    }
 }  
     
 .skip a{
