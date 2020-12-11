@@ -264,9 +264,14 @@ input[type=submit]:focus{
     max-width: 300px;
     height: auto;
     padding: 5px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.smoothie-image, .tofuscramble-image, .avotoast-image{
+    margin-left: auto;
+    margin-right: auto;
+}
 .smoothie, .tofu-scramble, .avocado-toast{
     background-color: rgb(152, 93, 95, 0.25);
     margin: 20px;
@@ -605,8 +610,6 @@ transform: rotateY(180deg);
 
     }
     
-
-    
     .salad-image img, .chickpeatuna-image img, .falafel-image img{
         max-width: 300px;
         height: auto;
@@ -725,7 +728,7 @@ transform: rotateY(180deg);
     }
 
 
-    .pizza figure img{
+    .nachos figure img{
         border: none;
         margin: 0px;
         padding: 0px;
@@ -734,7 +737,7 @@ transform: rotateY(180deg);
         position: absolute;
     }
 
-    .pizza figure figcaption{
+    .nachos figure figcaption{
         background: rgba(250, 235, 215,.5);
         height: 300px;
         width: 300px;
@@ -747,7 +750,7 @@ transform: rotateY(180deg);
         transition: opacity .2s, visibility .2s;
     }
 
-    .pizza figure:hover figcaption{
+    .nachos figure:hover figcaption{
         visibility: visible;
         opacity: 1;
     }
@@ -914,7 +917,7 @@ transform: rotateY(180deg);
         opacity: 1;
     }
 
-    .hummus figure img{
+    .chickennugs figure img{
         border: none;
         margin: 0px;
         padding: 0px;
@@ -923,7 +926,7 @@ transform: rotateY(180deg);
         position: absolute;
     }
 
-    .hummus figure figcaption{
+    .chickennugs figure figcaption{
         background: rgba(250, 235, 215,.5);
         height: 300px;
         width: 300px;
@@ -936,7 +939,7 @@ transform: rotateY(180deg);
         transition: opacity .2s, visibility .2s;
     }
 
-    .hummus figure:hover figcaption{
+    .chickennugs figure:hover figcaption{
         visibility: visible;
         opacity: 1;
     }
@@ -1072,11 +1075,6 @@ transform: rotateY(180deg);
         
     }
 
-    .pizza figure img, .alteatschickpeatuna figure img, .tacosalad figure img, .stirfrynoodle figure img, 
-    .stuffedmushrooms figure img, .wagamama figure img, .hummus figure img, .thebagel figure img{
-        margin: 5px;
-   
-    }
 
     nav li{
         float:left; 
